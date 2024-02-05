@@ -13,6 +13,18 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+"""
+In the recursive solutions, we worked backward. In this iterative solution, we work
+forward. Sometimes recursion is the most intuitive way to solve a problem. For exam-
+ple, the meat of fib1() and fib2() is pretty much a mechanical translation of the
+original Fibonacci formula. However, naive recursive solutions can also come with sig-
+nificant performance costs. Remember, any problem that can be solved recursively
+can also be solved iteratively.
+
+"""
+
+
+
 def fib5(n: int) -> int:
     if n == 0: return n  # special case
     last: int = 0  # initially set to fib(0)
